@@ -1,2 +1,2 @@
 Personal blog.
-Code taken from: https://github.com/leerob/leerob.io
+Code inspired from: https://github.com/leerob/leerob.io
