@@ -3,7 +3,7 @@ import clsx from "clsx";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/sidebar";
-// import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react';
 
 const graphik = localFont({
   src: [
@@ -78,7 +78,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
-          {/* <Analytics /> */}
+          <Analytics />
         </main>
       </body>
     </html>
