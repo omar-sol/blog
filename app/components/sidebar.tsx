@@ -15,9 +15,9 @@ const navItems: Record<string, NavItem> = {
   "/blog": {
     name: "blog",
   },
-  "/projects": {
-    name: "projects",
-  },
+  // "/projects": {
+  //   name: "projects",
+  // },
 };
 
 export default function Navbar() {

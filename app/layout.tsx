@@ -48,14 +48,14 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Omar Solano",
-    card: "summary_large_image",
-  },
-  verification: {
-    google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
-    yandex: "14d2e73487fa6c71",
-  },
+  // twitter: {
+  //   title: "Omar Solano",
+  //   card: "summary_large_image",
+  // },
+  // verification: {
+  //   google: "",
+  //   yandex: "",
+  // },
 };
 
 export default function RootLayout({
