@@ -1,26 +1,26 @@
 import "./global.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import Navbar from "./components/sidebar";
 import { Analytics } from '@vercel/analytics/react';
 
-const graphik = localFont({
-  src: [
-    {
-      path: "../public/fonts/Graphik-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Graphik-Medium.ttf",
-      weight: "600",
-      style: "bold",
-    },
-  ],
-  variable: "--font-graphik",
-  display: "swap",
-});
+// const graphik = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/Graphik-Regular.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/fonts/Graphik-Medium.ttf",
+//       weight: "600",
+//       style: "bold",
+//     },
+//   ],
+//   variable: "--font-graphik",
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://omarsolano.com"),
@@ -68,15 +68,15 @@ export default function RootLayout({
       lang="en"
       className={clsx(
         "text-black bg-white dark:text-white dark:bg-[#111010]",
-        graphik.variable
+        // graphik.variable
       )}
     >
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className="antialiased max-w-2xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <div className="flex-auto flex flex-row md:justify-end">
+          {/* <div className="flex-auto flex flex-row md:justify-end">
             <Navbar />
-          </div>
+          </div> */}
           {children}
           <Analytics />
         </main>

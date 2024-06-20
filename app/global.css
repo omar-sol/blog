@@ -26,11 +26,11 @@ html {
 }
 
 .prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply transition-all decoration-neutral-400 text-black underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+  @apply text-neutral-300 text-black;
   content: '#';
 }
 
@@ -60,6 +60,10 @@ html {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
+}
+
+.prose {
+  @apply text-black; /* Ensuring text is black */
 }
 
 code[class*='language-'],
@@ -131,4 +135,10 @@ table {
 }
 [data-rehype-pretty-code-title] + pre {
   @apply mt-0 rounded-t-none border-t-0;
+}
+
+
+body {
+  font-family: "Times New Roman", Times, serif; 
+  
 }
