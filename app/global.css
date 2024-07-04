@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply leading-relaxed text-base py-0 px-2.5 my-[50px] mx-auto max-w-[650px];
+  }
+}
+
+@layer components {
+  #maincontent {
+    @apply max-w-[42em] my-[15px] mx-auto;
+  }
+}
+
+/* Your existing styles */
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -25,12 +38,16 @@ html {
   @apply visible;
 }
 
-.prose a {
-  @apply transition-all decoration-neutral-400 text-black underline-offset-2 decoration-[0.1em];
-}
 
+.prose {
+  @apply transition-all text-black dark:text-white underline-offset-2 decoration-[0.1em] font-[500];
+}
+/* .prose a {
+  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+} */
+/* 
 .prose .anchor:after {
-  @apply text-neutral-300 text-black;
+  @apply text-neutral-300 dark:text-neutral-700;
   content: '#';
 }
 
@@ -49,7 +66,7 @@ html {
 .prose pre code {
   @apply text-neutral-800 dark:text-neutral-200 p-0;
   border: initial;
-}
+} */
 
 .prose img {
   /* Don't apply styles to next/image */
@@ -60,10 +77,6 @@ html {
   /* Override removing top margin, causing layout shift */
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
-}
-
-.prose {
-  @apply text-black; /* Ensuring text is black */
 }
 
 code[class*='language-'],
@@ -137,8 +150,7 @@ table {
   @apply mt-0 rounded-t-none border-t-0;
 }
 
-
 body {
-  font-family: "Times New Roman", Times, serif; 
-  
+  font-family: Times, serif;
 }
+

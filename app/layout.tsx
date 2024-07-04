@@ -1,26 +1,26 @@
 import "./global.css";
 import clsx from "clsx";
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import Navbar from "./components/sidebar";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
-// const graphik = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/Graphik-Regular.ttf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/fonts/Graphik-Medium.ttf",
-//       weight: "600",
-//       style: "bold",
-//     },
-//   ],
-//   variable: "--font-graphik",
-//   display: "swap",
-// });
+const graphik = localFont({
+  src: [
+    {
+      path: "../public/fonts/Graphik-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Graphik-Medium.ttf",
+      weight: "600",
+      style: "bold",
+    },
+  ],
+  variable: "--font-graphik",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://omarsolano.com"),
@@ -67,7 +67,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "text-black bg-white dark:text-white dark:bg-[#111010]",
+        "text-black bg-white dark:text-white dark:bg-[#111010]"
         // graphik.variable
       )}
     >

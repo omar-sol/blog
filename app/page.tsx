@@ -18,14 +18,14 @@ function ArrowIcon() {
 export default function Page() {
   return (
     <section className="max-w-4xl">
-      <h1 className="font-bold text-2xl mb-8 tracking-tighter">Welcome!</h1>
+      <h1 className="font-bold text-2xl mb-8 tracking-tighter">Omar Solano</h1>
       <p className="prose prose-neutral dark:prose-invert max-w-none">
-        Hello! I'm Omar. I'm a Machine Learning Engineer with over three
-        years of experience. I completed my undergraduate studies at
-        École de technologie supérieure (ÉTS) in Montréal, Canada, and I'm
-        currently pursuing a Master's degree with a focus on AI. Passionate
-        about using AI to enhance and upgrade products. If you're interested in
-        collaborating on innovative AI projects, feel free to reach out!
+        Hello! I'm a Machine Learning Engineer with over three years of
+        experience. I completed my undergraduate studies at École de technologie
+        supérieure (ÉTS) in Montréal, Canada, and I'm currently pursuing a
+        Master's degree with a focus on AI. Passionate about using AI to enhance
+        and upgrade products. If you're interested in collaborating on
+        innovative AI projects, feel free to reach out!
       </p>
 
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-black dark:text-neutral-300">
