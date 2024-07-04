@@ -15,6 +15,9 @@ function ArrowIcon() {
   );
 }
 
+
+
+
 export default function Page() {
   return (
     <section className="max-w-4xl">
@@ -49,6 +52,17 @@ export default function Page() {
           >
             <ArrowIcon />
             <p className="h-7 ml-2">Email me</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://cv.omarsolano.com/"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">CV</p>
           </a>
         </li>
       </ul>
